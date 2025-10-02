@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vinicius Pedro Bisol - Resume (EN)</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent1: #0ea5a0;
+            --accent2: #3b82f6;
+            --muted: #94a3b8;
+            --text: #e6eef8;
+            --glass: rgba(255, 255, 255, 0.03);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #071227 0%, #081426 100%);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+        }
+
+        .header {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--accent2), var(--accent1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 28px;
+            color: white;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .sub {
+            color: var(--muted);
+            margin-top: 6px;
+            font-size: 13px;
+        }
+
+        .contact {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 22px;
+            margin-top: 22px;
+        }
+
+        .card {
+            background: var(--glass);
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--accent2);
+            margin-bottom: 10px;
+        }
+
+        .pill {
+            background: linear-gradient(90deg, var(--accent2), var(--accent1));
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-weight: 700;
+            color: #021124;
+            font-size: 12px;
+        }
+
+        .list {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--text);
+            line-height: 1.45;
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        .skill-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 6px 8px;
+            border-radius: 8px;
+            font-size: 13px;
+            color: var(--text)
+        }
+
+        .qr {
+            display: flex;
+            gap: 8px;
+            align-items: center
+        }
+
+        .qr img {
+            width: 72px;
+            height: 72px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.04)
+        }
+
+        .footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 12px;
+            text-align: center
+        }
+
+        @media print {
+            body {
+                padding: 0
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                border-radius: 0
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">VB</div>
+            <div class="info">
+                <h1 class="name">Vinicius Pedro Bisol</h1>
+                <div class="sub">Full Stack Developer — Backend • Frontend • Mobile</div>
+                <div class="contact small">
+                    São José do Rio Preto – SP • +55 54 99169‑0948 • vinybisol@gmail.com •
+                    <a href="https://www.linkedin.com/in/viniciusbisol"
+                        style="color:var(--accent1);text-decoration:none">linkedin.com/in/viniciusbisol</a> •
+                    <a href="https://github.com/vinybisol"
+                        style="color:var(--accent2);text-decoration:none">github.com/vinybisol</a>
+                </div>
+            </div>
+            <div class="qr card" style="flex-direction:column;align-items:flex-end">
+                <div style="font-size:12px;color:var(--muted)">LinkedIn</div>
+                <img alt="QR LinkedIn"
+                    src="https://chart.googleapis.com/chart?chs=160x160&cht=qr&chl=https://www.linkedin.com/in/viniciusbisol&choe=UTF-8" />
+            </div>
+        </div>
+
+        <div class="columns">
+            <div>
+                <div class="card">
+                    <div class="section-title">
+                        <div class="pill">Objective</div>
+                    </div>
+                    <div class="small">Full Stack Developer focused on Backend, Frontend, and Mobile. Seeking national
+                        and international opportunities to deliver scalable, high-impact solutions.</div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Professional Summary</strong></div>
+                    <ul class="list small">
+                        <li>+5 years delivering robust and scalable systems (.NET, Angular, Node.js, Flutter).</li>
+                        <li>Back office project reduced <strong>80% of N3 support tickets</strong>.</li>
+                        <li>Leadership profile (commander) and strong communication across technical and business areas.
+                        </li>
+                        <li>+3 years working with Agile methodologies (Scrum/Kanban).</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Experience</strong></div>
+                    <div style="margin-bottom:10px">
+                        <strong>Cyncly — Software Developer III</strong>
+                        <div class="small">Jan/2023 – Present • Remote</div>
+                        <ul class="list small">
+                            <li>Developed and maintained systems for the furniture industry.</li>
+                            <li>Back office project reduced <strong>80% of N3 support tickets</strong>.</li>
+                            <li>Business rules definition and Azure provisioning.</li>
+                            <li>Participated in POCs (one currently in development).</li>
+                        </ul>
+                    </div>
+                    <div style="margin-bottom:10px">
+                        <strong>SIM Rede de Postos — Software Engineer</strong>
+                        <div class="small">Mar/2022 – Jan/2023 • Flores da Cunha, RS</div>
+                        <ul class="list small">
+                            <li>Technical leadership on B2B portal.</li>
+                            <li>Digitalized fiscal documents for 150+ units (D+1).</li>
+                            <li>Managed team (2 mid-level, 1 senior developer).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong>Databoff Sistemas — Software Developer</strong>
+                        <div class="small">Feb/2020 – Mar/2022 • Caxias do Sul, RS</div>
+                        <ul class="list small">
+                            <li>Developed ERP system with 400+ active clients.</li>
+                            <li>Fiscal customizations and invoice issuance according to regulations.</li>
+                            <li>Requirements gathering and documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Projects</strong></div>
+                    <div class="small">
+                        <strong>Mobile App (Flutter)</strong> — Architecture, development, deployment, and Play Store
+                        publication handled entirely by me (in process).
+                    </div>
+                </div>
+
+            </div>
+
+            <aside>
+                <div class="card">
+                    <div class="section-title"><strong>Education</strong></div>
+                    <div class="small">
+                        <strong>Postgraduate in Mobile Development</strong> — Estácio (2025 — ongoing)<br />
+                        <strong>Technologist in Systems Analysis and Development</strong> — Estácio (2022 — 2024)<br />
+                        <strong>Technical in Industrial Automation</strong> — SENAI Mecatrônica (2010 — 2012)
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Skills</strong></div>
+                    <div class="skill-grid">
+                        <div class="skill">C#</div>
+                        <div class="skill">Dart</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">TypeScript</div>
+                        <div class="skill">.NET</div>
+                        <div class="skill">Angular</div>
+                        <div class="skill">Flutter</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">PostgreSQL</div>
+                        <div class="skill">MongoDB</div>
+                        <div class="skill">Azure</div>
+                        <div class="skill">CI/CD</div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Certifications</strong></div>
+                    <div class="small">
+                        AZ‑900 (Azure Fundamentals) • IoT • LGPD • AdonisJs 5 (TypeScript & TDD) • Entrepreneurial
+                        Attitude
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px">
+                    <div class="section-title"><strong>Languages</strong></div>
+                    <div class="small">Portuguese (Native) • English B2 (practice ~2h/week)</div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="footer">Available for national and international opportunities • Portfolio/GitHub:
+            github.com/vinybisol</div>
+    </div>
+</body>
+
+</html>
