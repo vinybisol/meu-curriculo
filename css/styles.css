@@ -187,3 +187,22 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 800px) {
+    body {
+        padding: 20px;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+}
